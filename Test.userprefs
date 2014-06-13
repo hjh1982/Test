@@ -1,0 +1,18 @@
+﻿<Properties>
+  <MonoDevelop.Ide.Workspace />
+  <MonoDevelop.Ide.Workbench ActiveDocument="..\Test2d\Assets\TDTK\TDTK (Base)\Scripts\C#\SpawnManager.cs">
+    <Files>
+      <File FileName="..\Test2d\Assets\TDTK\TDTK (Base)\Scripts\C#\SpawnManager.cs" Line="795" Column="25" />
+      <File FileName="..\Test2d\Assets\TDTK\TDTK (Base)\Scripts\C#\UI\UI.cs" Line="719" Column="29" />
+      <File FileName="..\Test2d\Assets\TDTK\TDTK (Base)\Scripts\C#\ObjectPoolManager.cs" Line="135" Column="19" />
+    </Files>
+  </MonoDevelop.Ide.Workbench>
+  <MonoDevelop.Ide.DebuggingService.Breakpoints>
+    <BreakpointStore>
+      <Breakpoint file="D:\DataBase\unity\Test2d\Assets\TDTK\TDTK (Base)\Scripts\C#\SpawnManager.cs" line="963" />
+    </BreakpointStore>
+  </MonoDevelop.Ide.DebuggingService.Breakpoints>
+  <MonoDevelop.Ide.DebuggingService.PinnedWatches>
+    <Watch file="..\Test2d\Assets\TDTK\TDTK (Base)\Scripts\C#\SpawnManager.cs" line="965" offsetX="227" offsetY="16412" expression="spawnManager" liveUpdate="False" />
+  </MonoDevelop.Ide.DebuggingService.PinnedWatches>
+</Properties>
