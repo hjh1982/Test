@@ -4,6 +4,29 @@ ehthumbs.db
 
 # Folder config file
 Desktop.ini
+Assets/TDTK (NGUI_Full).meta
+Assets/TDTK (NGUI_Full)/
+Assets/TDTK.meta
+Assets/TDTK/
+Assets/NGUI.meta
+Assets/NGUI/
+Library/
+Temp/
+
+Assembly-CSharp-Editor-vs.csproj
+Assembly-CSharp-Editor.csproj
+Assembly-CSharp-vs.csproj
+Assembly-CSharp.csproj
+Assembly-UnityScript-vs.unityproj
+Assembly-UnityScript.unityproj
+Assets/Texture/SpriteSheet/Player.meta
+ProjectSettings/ProjectSettings.asset
+Test-csharp.sln
+Test.sln
+UnityVS.Test.CSharp.Editor.csproj
+UnityVS.Test.CSharp.csproj
+UnityVS.Test.UnityScript.unityproj
+UnityVS.Test.sln
 
 # Recycle Bin used on file shares
 $RECYCLE.BIN/

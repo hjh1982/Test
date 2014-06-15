@@ -1,9 +1,8 @@
 ﻿using System;
 using System.Collections.Generic;
 using UnityEngine;
-using lib.managers;
 
-namespace lib.tools
+namespace engine.lib
 {
     public class PlaySound : MonoBehaviour
     {

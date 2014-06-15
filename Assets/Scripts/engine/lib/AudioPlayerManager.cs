@@ -1,8 +1,7 @@
 ﻿using UnityEngine;
 using System.Collections.Generic;
-using lib.utils;
 
-namespace lib.managers
+namespace engine.lib
 {
     /// <summary>
     /// 全局的声音管理类，结合PlaySound使用

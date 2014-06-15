@@ -1,6 +1,6 @@
 ﻿using UnityEngine;
 
-namespace lib.utils
+namespace engine.lib
 {
     /// <summary>
     /// GameObject工具类

@@ -14,7 +14,7 @@
     <NoStdLib>true</NoStdLib>
     <ProjectTypeGuids>{E097FAD1-6243-4DAD-9C02-E9B9EFC3FFC1};{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}</ProjectTypeGuids>
     <MonoProfile>unity</MonoProfile>
-    <UnityPath>C:\Program Files (x86)\Unity\Editor</UnityPath>
+    <UnityPath>C:\Program Files\Unity\Editor</UnityPath>
     <MonoPath>$(UnityPath)\Data\Mono</MonoPath>
     <LibraryAssembly>Assembly-CSharp.dll</LibraryAssembly>
     <TargetFrameworkDirectory>$(MonoPath)\lib\mono\$(MonoProfile)</TargetFrameworkDirectory>
@@ -194,12 +194,14 @@
     <Compile Include="Assets\Scripts\engine\GameControl.cs" />
     <Compile Include="Assets\Scripts\engine\GameState.cs" />
     <Compile Include="Assets\Scripts\engine\LayerManager.cs" />
+    <Compile Include="Assets\Scripts\engine\lib\AudioPlayerManager.cs" />
+    <Compile Include="Assets\Scripts\engine\lib\GameObjectUtil.cs" />
+    <Compile Include="Assets\Scripts\engine\lib\PlaySound.cs" />
     <Compile Include="Assets\Scripts\engine\PathTD.cs" />
     <Compile Include="Assets\Scripts\engine\Platforms.cs" />
     <Compile Include="Assets\Scripts\engine\ResourceManager.cs" />
     <Compile Include="Assets\Scripts\engine\ShootObject.cs" />
     <Compile Include="Assets\Scripts\engine\SpawnManager.cs" />
-    <Compile Include="Assets\Scripts\engine\SubWave.cs" />
     <Compile Include="Assets\Scripts\engine\Unit.cs" />
     <Compile Include="Assets\Scripts\engine\UnitCreep.cs" />
     <Compile Include="Assets\Scripts\engine\UnitTower.cs" />
@@ -209,11 +211,61 @@
     <Compile Include="Assets\Scripts\game\PathFind.cs" />
     <Compile Include="Assets\Scripts\game\SoundControl.cs" />
     <Compile Include="Assets\Scripts\game\StartSence.cs" />
-    <Compile Include="Assets\Scripts\lib\managers\AudioPlayerManager.cs" />
-    <Compile Include="Assets\Scripts\lib\tools\Animation.cs" />
-    <Compile Include="Assets\Scripts\lib\tools\AnimationPlayer.cs" />
-    <Compile Include="Assets\Scripts\lib\tools\PlaySound.cs" />
-    <Compile Include="Assets\Scripts\lib\utils\GameObjectUtil.cs" />
+    <Compile Include="Assets\Scripts\Test.cs" />
+    <Compile Include="Assets\TDTK\TDTK (Base)\Scripts\C#\AbilityEffects\AirStrike.cs" />
+    <Compile Include="Assets\TDTK\TDTK (Base)\Scripts\C#\AbilityEffects\TextureScroll.cs" />
+    <Compile Include="Assets\TDTK\TDTK (Base)\Scripts\C#\AbilityManager.cs" />
+    <Compile Include="Assets\TDTK\TDTK (Base)\Scripts\C#\AudioManager.cs" />
+    <Compile Include="Assets\TDTK\TDTK (Base)\Scripts\C#\BaseObject.cs" />
+    <Compile Include="Assets\TDTK\TDTK (Base)\Scripts\C#\BuildManager.cs" />
+    <Compile Include="Assets\TDTK\TDTK (Base)\Scripts\C#\CameraControl.cs" />
+    <Compile Include="Assets\TDTK\TDTK (Base)\Scripts\C#\CursorManager.cs" />
+    <Compile Include="Assets\TDTK\TDTK (Base)\Scripts\C#\DamageTable.cs" />
+    <Compile Include="Assets\TDTK\TDTK (Base)\Scripts\C#\DebugDrawTD.cs" />
+    <Compile Include="Assets\TDTK\TDTK (Base)\Scripts\C#\DebugShowSelfTD.cs" />
+    <Compile Include="Assets\TDTK\TDTK (Base)\Scripts\C#\FPSControl.cs" />
+    <Compile Include="Assets\TDTK\TDTK (Base)\Scripts\C#\GameControl.cs" />
+    <Compile Include="Assets\TDTK\TDTK (Base)\Scripts\C#\GlobalStatsModifier.cs" />
+    <Compile Include="Assets\TDTK\TDTK (Base)\Scripts\C#\LayerManager.cs" />
+    <Compile Include="Assets\TDTK\TDTK (Base)\Scripts\C#\MiniMap.cs" />
+    <Compile Include="Assets\TDTK\TDTK (Base)\Scripts\C#\NodeGeneratorTD.cs" />
+    <Compile Include="Assets\TDTK\TDTK (Base)\Scripts\C#\ObjectPoolManager.cs" />
+    <Compile Include="Assets\TDTK\TDTK (Base)\Scripts\C#\OverlayManager.cs" />
+    <Compile Include="Assets\TDTK\TDTK (Base)\Scripts\C#\ParticleControl.cs" />
+    <Compile Include="Assets\TDTK\TDTK (Base)\Scripts\C#\PathFinderTD.cs" />
+    <Compile Include="Assets\TDTK\TDTK (Base)\Scripts\C#\PathIndicator.cs" />
+    <Compile Include="Assets\TDTK\TDTK (Base)\Scripts\C#\PathTD.cs" />
+    <Compile Include="Assets\TDTK\TDTK (Base)\Scripts\C#\PerkManager.cs" />
+    <Compile Include="Assets\TDTK\TDTK (Base)\Scripts\C#\PlatformTD.cs" />
+    <Compile Include="Assets\TDTK\TDTK (Base)\Scripts\C#\PrefabList\AbilityListPrefab.cs" />
+    <Compile Include="Assets\TDTK\TDTK (Base)\Scripts\C#\PrefabList\CreepListPrefab.cs" />
+    <Compile Include="Assets\TDTK\TDTK (Base)\Scripts\C#\PrefabList\DamageArmorListPrefab.cs" />
+    <Compile Include="Assets\TDTK\TDTK (Base)\Scripts\C#\PrefabList\IconList.cs" />
+    <Compile Include="Assets\TDTK\TDTK (Base)\Scripts\C#\PrefabList\TowerListPrefab.cs" />
+    <Compile Include="Assets\TDTK\TDTK (Base)\Scripts\C#\Props\RotateTD.cs" />
+    <Compile Include="Assets\TDTK\TDTK (Base)\Scripts\C#\ResourceManager.cs" />
+    <Compile Include="Assets\TDTK\TDTK (Base)\Scripts\C#\ScoreManager.cs" />
+    <Compile Include="Assets\TDTK\TDTK (Base)\Scripts\C#\SelfDeactivator.cs" />
+    <Compile Include="Assets\TDTK\TDTK (Base)\Scripts\C#\ShootObject.cs" />
+    <Compile Include="Assets\TDTK\TDTK (Base)\Scripts\C#\SpawnManager.cs" />
+    <Compile Include="Assets\TDTK\TDTK (Base)\Scripts\C#\TurretObject.cs" />
+    <Compile Include="Assets\TDTK\TDTK (Base)\Scripts\C#\UI\UI.cs" />
+    <Compile Include="Assets\TDTK\TDTK (Base)\Scripts\C#\UI\UIPerk.cs" />
+    <Compile Include="Assets\TDTK\TDTK (Base)\Scripts\C#\UI\UIRect.cs" />
+    <Compile Include="Assets\TDTK\TDTK (Base)\Scripts\C#\Unit.cs" />
+    <Compile Include="Assets\TDTK\TDTK (Base)\Scripts\C#\UnitCreep.cs" />
+    <Compile Include="Assets\TDTK\TDTK (Base)\Scripts\C#\UnitCreepAttack.cs" />
+    <Compile Include="Assets\TDTK\TDTK (Base)\Scripts\C#\UnitTower.cs" />
+    <Compile Include="Assets\TDTK\TDTK (Base)\Scripts\C#\UnitUtility.cs" />
+    <Compile Include="Assets\TDTK\TDTK (Base)\Scripts\C#\Utility.cs" />
+    <Compile Include="Assets\TDTK\TDTK (Base)\Scripts\Misc\DemoMainMenu.cs" />
+    <Compile Include="Assets\TDTK\TDTK (Base)\Scripts\Misc\Instruction.cs" />
+    <Compile Include="Assets\TDTK\TDTK (Base)\Scripts\Misc\MenuProps\Hover.cs" />
+    <Compile Include="Assets\TDTK\TDTK (Base)\Scripts\Misc\MenuProps\RandomRotate.cs" />
+    <Compile Include="Assets\TDTK\TDTK (Base)\Scripts\Misc\VersionLabel.cs" />
+    <Compile Include="Assets\TDTK\TDTK (Base)\Standard Assets\Scripts\Utility Scripts\CombineChildren.cs" />
+    <Compile Include="Assets\TDTK\TDTK (Base)\Standard Assets\Scripts\Utility Scripts\MeshCombineUtility.cs" />
+    <Compile Include="Assets\TDTK\TDTK (Base)\Standard Assets\Water (Basic)\Sources\Scripts\WaterSimple.cs" />
     <None Include="Assets\NGUI\Examples\Atlases\Fantasy\Fantasy Font - Normal.txt" />
     <None Include="Assets\NGUI\Examples\Atlases\Refractive\Refractive Font - Header.txt" />
     <None Include="Assets\NGUI\Examples\Atlases\Refractive\Refractive Font - Normal.txt" />
@@ -247,6 +299,14 @@
     <None Include="Assets\NGUI\Resources\Shaders\Unlit - Transparent Packed 2.shader" />
     <None Include="Assets\NGUI\Resources\Shaders\Unlit - Transparent Packed 3.shader" />
     <None Include="Assets\NGUI\Resources\Shaders\Unlit - Transparent Packed.shader" />
+    <None Include="Assets\TDTK\TDTK (Base)\Resources\PrefabList\Perk.txt" />
+    <None Include="Assets\TDTK\TDTK (Base)\Resources\PrefabList\Resource.txt" />
+    <None Include="Assets\TDTK\TDTK (Base)\Standard Assets\Particles\Sources\Shaders\Particle Alpha Blend (Queue +100).shader" />
+    <None Include="Assets\TDTK\TDTK (Base)\Standard Assets\Projectors\Guidelines.txt" />
+    <None Include="Assets\TDTK\TDTK (Base)\Standard Assets\Projectors\Sources\Shaders\Projector Light.shader" />
+    <None Include="Assets\TDTK\TDTK (Base)\Standard Assets\Projectors\Sources\Shaders\Projector Multiply.shader" />
+    <None Include="Assets\TDTK\TDTK (Base)\Standard Assets\ShurikenParticle\Shaders\Particle Add.shader" />
+    <None Include="Assets\TDTK\TDTK (Base)\Standard Assets\Water (Basic)\Sources\Shaders\FX-Water Simple.shader" />
   </ItemGroup>
   <Import Project="$(MSBuildExtensionsPath)\SyntaxTree\UnityVS\2012\UnityVS.CSharp.targets" />
 </Project>

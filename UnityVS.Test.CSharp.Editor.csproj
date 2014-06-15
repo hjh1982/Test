@@ -14,7 +14,7 @@
     <NoStdLib>true</NoStdLib>
     <ProjectTypeGuids>{E097FAD1-6243-4DAD-9C02-E9B9EFC3FFC1};{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}</ProjectTypeGuids>
     <MonoProfile>2.0</MonoProfile>
-    <UnityPath>C:\Program Files (x86)\Unity\Editor</UnityPath>
+    <UnityPath>C:\Program Files\Unity\Editor</UnityPath>
     <MonoPath>$(UnityPath)\Data\Mono</MonoPath>
     <LibraryAssembly>Assembly-CSharp-Editor.dll</LibraryAssembly>
     <TargetFrameworkDirectory>$(MonoPath)\lib\mono\$(MonoProfile)</TargetFrameworkDirectory>
@@ -65,6 +65,10 @@
     <ProjectReference Include="UnityVS.Test.CSharp.csproj">
       <Project>{14F6CDF6-9293-E1A8-A2EC-2D9997BD4D35}</Project>
       <Name>UnityVS.Test.CSharp</Name>
+    </ProjectReference>
+    <ProjectReference Include="UnityVS.Test.UnityScript.unityproj">
+      <Project>{D2181F66-A1B6-8F0D-8DB4-FE6FA6EE4283}</Project>
+      <Name>UnityVS.Test.UnityScript</Name>
     </ProjectReference>
   </ItemGroup>
   <ItemGroup>
@@ -150,6 +154,28 @@
     <Compile Include="Assets\NGUI\Scripts\Editor\UIWidgetContainerEditor.cs" />
     <Compile Include="Assets\NGUI\Scripts\Editor\UIWidgetInspector.cs" />
     <Compile Include="Assets\NGUI\Scripts\Editor\UIWrapContentEditor.cs" />
+    <Compile Include="Assets\TDTK\TDTK (Base)\Scripts\C#\Editor\AbilityEditor.cs" />
+    <Compile Include="Assets\TDTK\TDTK (Base)\Scripts\C#\Editor\AbilityEditorWindow.cs" />
+    <Compile Include="Assets\TDTK\TDTK (Base)\Scripts\C#\Editor\BuildEditor.cs" />
+    <Compile Include="Assets\TDTK\TDTK (Base)\Scripts\C#\Editor\CreepEditor.cs" />
+    <Compile Include="Assets\TDTK\TDTK (Base)\Scripts\C#\Editor\CreepManager.cs" />
+    <Compile Include="Assets\TDTK\TDTK (Base)\Scripts\C#\Editor\DamageArmorTableEditor.cs" />
+    <Compile Include="Assets\TDTK\TDTK (Base)\Scripts\C#\Editor\Drawing.cs" />
+    <Compile Include="Assets\TDTK\TDTK (Base)\Scripts\C#\Editor\GameControlEditor.cs" />
+    <Compile Include="Assets\TDTK\TDTK (Base)\Scripts\C#\Editor\LayerEditor.cs" />
+    <Compile Include="Assets\TDTK\TDTK (Base)\Scripts\C#\Editor\MenuExtension.cs" />
+    <Compile Include="Assets\TDTK\TDTK (Base)\Scripts\C#\Editor\PathEditor.cs" />
+    <Compile Include="Assets\TDTK\TDTK (Base)\Scripts\C#\Editor\PerkEditor.cs" />
+    <Compile Include="Assets\TDTK\TDTK (Base)\Scripts\C#\Editor\PerkEditorWindow.cs" />
+    <Compile Include="Assets\TDTK\TDTK (Base)\Scripts\C#\Editor\PlatformEditor.cs" />
+    <Compile Include="Assets\TDTK\TDTK (Base)\Scripts\C#\Editor\ResourceEditor.cs" />
+    <Compile Include="Assets\TDTK\TDTK (Base)\Scripts\C#\Editor\ResourceEditorWindow.cs" />
+    <Compile Include="Assets\TDTK\TDTK (Base)\Scripts\C#\Editor\ShootObjectEditor.cs" />
+    <Compile Include="Assets\TDTK\TDTK (Base)\Scripts\C#\Editor\SpawnEditor.cs" />
+    <Compile Include="Assets\TDTK\TDTK (Base)\Scripts\C#\Editor\SpawnManagerEditor.cs" />
+    <Compile Include="Assets\TDTK\TDTK (Base)\Scripts\C#\Editor\TowerEditor.cs" />
+    <Compile Include="Assets\TDTK\TDTK (Base)\Scripts\C#\Editor\TowerManager.cs" />
+    <Compile Include="Assets\TDTK\TDTK (Base)\Scripts\C#\Editor\UnitCreepAttackEditor.cs" />
     <None Include="Assets\NGUI\Examples\Atlases\Fantasy\Fantasy Font - Normal.txt" />
     <None Include="Assets\NGUI\Examples\Atlases\Refractive\Refractive Font - Header.txt" />
     <None Include="Assets\NGUI\Examples\Atlases\Refractive\Refractive Font - Normal.txt" />
@@ -183,6 +209,14 @@
     <None Include="Assets\NGUI\Resources\Shaders\Unlit - Transparent Packed 2.shader" />
     <None Include="Assets\NGUI\Resources\Shaders\Unlit - Transparent Packed 3.shader" />
     <None Include="Assets\NGUI\Resources\Shaders\Unlit - Transparent Packed.shader" />
+    <None Include="Assets\TDTK\TDTK (Base)\Resources\PrefabList\Perk.txt" />
+    <None Include="Assets\TDTK\TDTK (Base)\Resources\PrefabList\Resource.txt" />
+    <None Include="Assets\TDTK\TDTK (Base)\Standard Assets\Particles\Sources\Shaders\Particle Alpha Blend (Queue +100).shader" />
+    <None Include="Assets\TDTK\TDTK (Base)\Standard Assets\Projectors\Guidelines.txt" />
+    <None Include="Assets\TDTK\TDTK (Base)\Standard Assets\Projectors\Sources\Shaders\Projector Light.shader" />
+    <None Include="Assets\TDTK\TDTK (Base)\Standard Assets\Projectors\Sources\Shaders\Projector Multiply.shader" />
+    <None Include="Assets\TDTK\TDTK (Base)\Standard Assets\ShurikenParticle\Shaders\Particle Add.shader" />
+    <None Include="Assets\TDTK\TDTK (Base)\Standard Assets\Water (Basic)\Sources\Shaders\FX-Water Simple.shader" />
     <None Include="Assets\UnityVS\Editor\SyntaxTree.VisualStudio.Unity.Bridge.dll" />
     <None Include="Assets\UnityVS\Editor\SyntaxTree.VisualStudio.Unity.Messaging.dll" />
   </ItemGroup>

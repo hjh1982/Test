@@ -14,7 +14,7 @@
     <NoStdLib>true</NoStdLib>
     <ProjectTypeGuids>{84365F2C-1DDE-431A-8C14-179ADC971E4D};{1FAC5C55-277D-4884-94A4-83DBDAF57E56}</ProjectTypeGuids>
     <MonoProfile>unity</MonoProfile>
-    <UnityPath>C:\Program Files (x86)\Unity\Editor</UnityPath>
+    <UnityPath>C:\Program Files\Unity\Editor</UnityPath>
     <MonoPath>$(UnityPath)\Data\Mono</MonoPath>
     <LibraryAssembly>Assembly-UnityScript.dll</LibraryAssembly>
     <TargetFrameworkDirectory>$(MonoPath)\lib\mono\$(MonoProfile)</TargetFrameworkDirectory>
@@ -58,7 +58,39 @@
   <ItemGroup>
     <Compile Include="Assets\TDTK\TDTK (Base)\FPSDisplay\FrameRate.js" />
     <Compile Include="Assets\TDTK\TDTK (Base)\Standard Assets\Particles\Legacy Particles\TimedObjectDestructor.js" />
+    <None Include="Assets\NGUI\Examples\Atlases\Fantasy\Fantasy Font - Normal.txt" />
+    <None Include="Assets\NGUI\Examples\Atlases\Refractive\Refractive Font - Header.txt" />
+    <None Include="Assets\NGUI\Examples\Atlases\Refractive\Refractive Font - Normal.txt" />
+    <None Include="Assets\NGUI\Examples\Atlases\SciFi\SciFi Font - Header.txt" />
+    <None Include="Assets\NGUI\Examples\Atlases\SciFi\SciFi Font - Normal.txt" />
+    <None Include="Assets\NGUI\Examples\Atlases\Wooden\Arimo14.txt" />
+    <None Include="Assets\NGUI\Examples\Atlases\Wooden\Arimo18.txt" />
+    <None Include="Assets\NGUI\Examples\Atlases\Wooden\Arimo20.txt" />
+    <None Include="Assets\NGUI\Examples\Models\Orc Armor\Orc Armor.shader" />
+    <None Include="Assets\NGUI\Examples\Models\Orc\Orc Skin.shader" />
+    <None Include="Assets\NGUI\Examples\Resources\Localization.txt" />
+    <None Include="Assets\NGUI\Examples\Shaders\Refractive.shader" />
+    <None Include="Assets\NGUI\Examples\Shaders\Unlit - Additive Colored.shader" />
+    <None Include="Assets\NGUI\Examples\Shaders\Unlit - Depth Cutout.shader" />
+    <None Include="Assets\NGUI\Examples\Shaders\Unlit - Depth.shader" />
+    <None Include="Assets\NGUI\Examples\Shaders\Unlit - Masked Colored.shader" />
     <None Include="Assets\NGUI\ReadMe - 3.6.0.txt" />
+    <None Include="Assets\NGUI\Resources\Shaders\Unlit - Premultiplied Colored 1.shader" />
+    <None Include="Assets\NGUI\Resources\Shaders\Unlit - Premultiplied Colored 2.shader" />
+    <None Include="Assets\NGUI\Resources\Shaders\Unlit - Premultiplied Colored 3.shader" />
+    <None Include="Assets\NGUI\Resources\Shaders\Unlit - Premultiplied Colored.shader" />
+    <None Include="Assets\NGUI\Resources\Shaders\Unlit - Text 1.shader" />
+    <None Include="Assets\NGUI\Resources\Shaders\Unlit - Text 2.shader" />
+    <None Include="Assets\NGUI\Resources\Shaders\Unlit - Text 3.shader" />
+    <None Include="Assets\NGUI\Resources\Shaders\Unlit - Text.shader" />
+    <None Include="Assets\NGUI\Resources\Shaders\Unlit - Transparent Colored 1.shader" />
+    <None Include="Assets\NGUI\Resources\Shaders\Unlit - Transparent Colored 2.shader" />
+    <None Include="Assets\NGUI\Resources\Shaders\Unlit - Transparent Colored 3.shader" />
+    <None Include="Assets\NGUI\Resources\Shaders\Unlit - Transparent Colored.shader" />
+    <None Include="Assets\NGUI\Resources\Shaders\Unlit - Transparent Packed 1.shader" />
+    <None Include="Assets\NGUI\Resources\Shaders\Unlit - Transparent Packed 2.shader" />
+    <None Include="Assets\NGUI\Resources\Shaders\Unlit - Transparent Packed 3.shader" />
+    <None Include="Assets\NGUI\Resources\Shaders\Unlit - Transparent Packed.shader" />
     <None Include="Assets\TDTK\TDTK (Base)\Resources\PrefabList\Perk.txt" />
     <None Include="Assets\TDTK\TDTK (Base)\Resources\PrefabList\Resource.txt" />
     <None Include="Assets\TDTK\TDTK (Base)\Standard Assets\Particles\Sources\Shaders\Particle Alpha Blend (Queue +100).shader" />
@@ -71,6 +103,19 @@
   <ItemGroup>
     <Folder Include="Assets" />
     <Folder Include="Assets\NGUI" />
+    <Folder Include="Assets\NGUI\Examples" />
+    <Folder Include="Assets\NGUI\Examples\Atlases" />
+    <Folder Include="Assets\NGUI\Examples\Atlases\Fantasy" />
+    <Folder Include="Assets\NGUI\Examples\Atlases\Refractive" />
+    <Folder Include="Assets\NGUI\Examples\Atlases\SciFi" />
+    <Folder Include="Assets\NGUI\Examples\Atlases\Wooden" />
+    <Folder Include="Assets\NGUI\Examples\Models" />
+    <Folder Include="Assets\NGUI\Examples\Models\Orc" />
+    <Folder Include="Assets\NGUI\Examples\Models\Orc Armor" />
+    <Folder Include="Assets\NGUI\Examples\Resources" />
+    <Folder Include="Assets\NGUI\Examples\Shaders" />
+    <Folder Include="Assets\NGUI\Resources" />
+    <Folder Include="Assets\NGUI\Resources\Shaders" />
     <Folder Include="Assets\TDTK" />
     <Folder Include="Assets\TDTK\TDTK (Base)" />
     <Folder Include="Assets\TDTK\TDTK (Base)\FPSDisplay" />

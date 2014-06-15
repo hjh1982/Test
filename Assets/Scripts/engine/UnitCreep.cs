@@ -3,19 +3,9 @@ using System.Collections;
 
 namespace engine
 {
-    public class UnitCreep : MonoBehaviour
+    public class UnitCreep:Unit
     {
-
-        // Use this for initialization
-        void Start()
-        {
-
-        }
-
-        // Update is called once per frame
-        void Update()
-        {
-
-        }
+		public int ID = -1;
+		public float Interval = -1;
     }
 }

@@ -3,19 +3,8 @@ using System.Collections;
 
 namespace engine
 {
-    public class UnitTower : MonoBehaviour
+    public class UnitTower : Unit
     {
-
-        // Use this for initialization
-        void Start()
-        {
-
-        }
-
-        // Update is called once per frame
-        void Update()
-        {
-
-        }
+	
     }
 }

@@ -39,10 +39,10 @@
 	<Reference Include="System.Core" />
 	<Reference Include="System.Xml.Linq" />
 	<Reference Include="UnityEngine">
-	  <HintPath>C:/Program Files (x86)/Unity/Editor/Data/Managed/UnityEngine.dll</HintPath>
+	  <HintPath>C:/Program Files/Unity/Editor/Data/Managed/UnityEngine.dll</HintPath>
 	</Reference>
 	<Reference Include="UnityEditor">
-	  <HintPath>C:/Program Files (x86)/Unity/Editor/Data/Managed/UnityEditor.dll</HintPath>
+	  <HintPath>C:/Program Files/Unity/Editor/Data/Managed/UnityEditor.dll</HintPath>
 	</Reference>
   </ItemGroup>
   <ItemGroup>
@@ -128,9 +128,33 @@
      <Compile Include="Assets\NGUI\Scripts\Editor\UIWidgetContainerEditor.cs" />
      <Compile Include="Assets\NGUI\Scripts\Editor\UIWidgetInspector.cs" />
      <Compile Include="Assets\NGUI\Scripts\Editor\UIWrapContentEditor.cs" />
+     <Compile Include="Assets\TDTK\TDTK (Base)\Scripts\C#\Editor\AbilityEditor.cs" />
+     <Compile Include="Assets\TDTK\TDTK (Base)\Scripts\C#\Editor\AbilityEditorWindow.cs" />
+     <Compile Include="Assets\TDTK\TDTK (Base)\Scripts\C#\Editor\BuildEditor.cs" />
+     <Compile Include="Assets\TDTK\TDTK (Base)\Scripts\C#\Editor\CreepEditor.cs" />
+     <Compile Include="Assets\TDTK\TDTK (Base)\Scripts\C#\Editor\CreepManager.cs" />
+     <Compile Include="Assets\TDTK\TDTK (Base)\Scripts\C#\Editor\DamageArmorTableEditor.cs" />
+     <Compile Include="Assets\TDTK\TDTK (Base)\Scripts\C#\Editor\Drawing.cs" />
+     <Compile Include="Assets\TDTK\TDTK (Base)\Scripts\C#\Editor\GameControlEditor.cs" />
+     <Compile Include="Assets\TDTK\TDTK (Base)\Scripts\C#\Editor\LayerEditor.cs" />
+     <Compile Include="Assets\TDTK\TDTK (Base)\Scripts\C#\Editor\MenuExtension.cs" />
+     <Compile Include="Assets\TDTK\TDTK (Base)\Scripts\C#\Editor\PathEditor.cs" />
+     <Compile Include="Assets\TDTK\TDTK (Base)\Scripts\C#\Editor\PerkEditor.cs" />
+     <Compile Include="Assets\TDTK\TDTK (Base)\Scripts\C#\Editor\PerkEditorWindow.cs" />
+     <Compile Include="Assets\TDTK\TDTK (Base)\Scripts\C#\Editor\PlatformEditor.cs" />
+     <Compile Include="Assets\TDTK\TDTK (Base)\Scripts\C#\Editor\ResourceEditor.cs" />
+     <Compile Include="Assets\TDTK\TDTK (Base)\Scripts\C#\Editor\ResourceEditorWindow.cs" />
+     <Compile Include="Assets\TDTK\TDTK (Base)\Scripts\C#\Editor\ShootObjectEditor.cs" />
+     <Compile Include="Assets\TDTK\TDTK (Base)\Scripts\C#\Editor\SpawnEditor.cs" />
+     <Compile Include="Assets\TDTK\TDTK (Base)\Scripts\C#\Editor\SpawnManagerEditor.cs" />
+     <Compile Include="Assets\TDTK\TDTK (Base)\Scripts\C#\Editor\TowerEditor.cs" />
+     <Compile Include="Assets\TDTK\TDTK (Base)\Scripts\C#\Editor\TowerManager.cs" />
+     <Compile Include="Assets\TDTK\TDTK (Base)\Scripts\C#\Editor\UnitCreepAttackEditor.cs" />
      <None Include="Assets\NGUI\Examples\Shaders\Unlit - Depth Cutout.shader" />
+     <None Include="Assets\TDTK\TDTK (Base)\Standard Assets\Projectors\Guidelines.txt" />
      <None Include="Assets\NGUI\ReadMe - 3.6.0.txt" />
      <None Include="Assets\NGUI\Resources\Shaders\Unlit - Text 2.shader" />
+     <None Include="Assets\TDTK\TDTK (Base)\Standard Assets\Projectors\Sources\Shaders\Projector Multiply.shader" />
      <None Include="Assets\NGUI\Examples\Models\Orc\Orc Skin.shader" />
      <None Include="Assets\NGUI\Examples\Atlases\Wooden\Arimo20.txt" />
      <None Include="Assets\NGUI\Examples\Atlases\Wooden\Arimo14.txt" />
@@ -139,6 +163,7 @@
      <None Include="Assets\NGUI\Examples\Shaders\Unlit - Masked Colored.shader" />
      <None Include="Assets\NGUI\Resources\Shaders\Unlit - Premultiplied Colored 3.shader" />
      <None Include="Assets\NGUI\Examples\Atlases\Wooden\Arimo18.txt" />
+     <None Include="Assets\TDTK\TDTK (Base)\Standard Assets\Particles\Sources\Shaders\Particle Alpha Blend (Queue +100).shader" />
      <None Include="Assets\NGUI\Examples\Atlases\SciFi\SciFi Font - Header.txt" />
      <None Include="Assets\NGUI\Resources\Shaders\Unlit - Transparent Colored 1.shader" />
      <None Include="Assets\NGUI\Examples\Atlases\Fantasy\Fantasy Font - Normal.txt" />
@@ -146,14 +171,19 @@
      <None Include="Assets\NGUI\Examples\Atlases\Refractive\Refractive Font - Normal.txt" />
      <None Include="Assets\NGUI\Resources\Shaders\Unlit - Premultiplied Colored 2.shader" />
      <None Include="Assets\NGUI\Resources\Shaders\Unlit - Text 3.shader" />
+     <None Include="Assets\TDTK\TDTK (Base)\Standard Assets\ShurikenParticle\Shaders\Particle Add.shader" />
      <None Include="Assets\NGUI\Resources\Shaders\Unlit - Transparent Packed 2.shader" />
+     <None Include="Assets\TDTK\TDTK (Base)\Standard Assets\Projectors\Sources\Shaders\Projector Light.shader" />
      <None Include="Assets\NGUI\Resources\Shaders\Unlit - Transparent Packed 1.shader" />
+     <None Include="Assets\TDTK\TDTK (Base)\Standard Assets\Water (Basic)\Sources\Shaders\FX-Water Simple.shader" />
      <None Include="Assets\NGUI\Resources\Shaders\Unlit - Premultiplied Colored 1.shader" />
      <None Include="Assets\NGUI\Resources\Shaders\Unlit - Premultiplied Colored.shader" />
      <None Include="Assets\NGUI\Resources\Shaders\Unlit - Transparent Colored.shader" />
      <None Include="Assets\NGUI\Resources\Shaders\Unlit - Text.shader" />
      <None Include="Assets\NGUI\Resources\Shaders\Unlit - Transparent Packed.shader" />
      <None Include="Assets\NGUI\Resources\Shaders\Unlit - Transparent Packed 3.shader" />
+     <None Include="Assets\TDTK\TDTK (Base)\Resources\PrefabList\Resource.txt" />
+     <None Include="Assets\TDTK\TDTK (Base)\Resources\PrefabList\Perk.txt" />
      <None Include="Assets\NGUI\Examples\Shaders\Unlit - Additive Colored.shader" />
      <None Include="Assets\NGUI\Examples\Atlases\Refractive\Refractive Font - Header.txt" />
      <None Include="Assets\NGUI\Examples\Shaders\Refractive.shader" />
@@ -161,6 +191,9 @@
      <None Include="Assets\NGUI\Examples\Atlases\SciFi\SciFi Font - Normal.txt" />
      <None Include="Assets\NGUI\Examples\Models\Orc Armor\Orc Armor.shader" />
      <None Include="Assets\NGUI\Examples\Resources\Localization.txt" />
+ <Reference Include="Assembly-UnityScript">
+ <HintPath>D:/unity/Test/Library/ScriptAssemblies/Assembly-UnityScript.dll</HintPath>
+ </Reference>
  <Reference Include="SyntaxTree.VisualStudio.Unity.Bridge">
  <HintPath>D:/unity/Test/Assets/UnityVS/Editor/SyntaxTree.VisualStudio.Unity.Bridge.dll</HintPath>
  </Reference>
@@ -168,7 +201,7 @@
  <HintPath>D:/unity/Test/Assets/UnityVS/Editor/SyntaxTree.VisualStudio.Unity.Messaging.dll</HintPath>
  </Reference>
  <Reference Include="UnityEditor.Graphs">
- <HintPath>C:/Program Files (x86)/Unity/Editor/Data/Managed/UnityEditor.Graphs.dll</HintPath>
+ <HintPath>C:/Program Files/Unity/Editor/Data/Managed/UnityEditor.Graphs.dll</HintPath>
  </Reference>
   </ItemGroup>
   <ItemGroup>
