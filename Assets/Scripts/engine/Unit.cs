@@ -3,9 +3,17 @@ using System.Collections;
 
 namespace engine
 {
-    public class Unit : MonoBehaviour
+    /// <summary>
+    /// 
+    /// </summary>
+    public class Unit:MonoBehaviour
     {
+        public int id;
 
+        public GameObject sprite;
+
+       
+        //public Vector3 Position;
         // Use this for initialization
         void Start()
         {

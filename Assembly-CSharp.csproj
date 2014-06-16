@@ -39,10 +39,10 @@
 	<Reference Include="System.Core" />
 	<Reference Include="System.Xml.Linq" />
 	<Reference Include="UnityEngine">
-	  <HintPath>C:/Program Files/Unity/Editor/Data/Managed/UnityEngine.dll</HintPath>
+	  <HintPath>C:/Program Files (x86)/Unity/Editor/Data/Managed/UnityEngine.dll</HintPath>
 	</Reference>
 	<Reference Include="UnityEditor">
-	  <HintPath>C:/Program Files/Unity/Editor/Data/Managed/UnityEditor.dll</HintPath>
+	  <HintPath>C:/Program Files (x86)/Unity/Editor/Data/Managed/UnityEditor.dll</HintPath>
 	</Reference>
   </ItemGroup>
   <ItemGroup>
@@ -200,7 +200,6 @@
      <Compile Include="Assets\Scripts\engine\lib\PlaySound.cs" />
      <Compile Include="Assets\Scripts\game\Level.cs" />
      <Compile Include="Assets\Scripts\game\Level1.cs" />
-     <Compile Include="Assets\Scripts\game\PathFind.cs" />
      <Compile Include="Assets\Scripts\game\SoundControl.cs" />
      <Compile Include="Assets\Scripts\game\StartSence.cs" />
      <Compile Include="Assets\TDTK\TDTK (Base)\Scripts\C#\AbilityEffects\AirStrike.cs" />

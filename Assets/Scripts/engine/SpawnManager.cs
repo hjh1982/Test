@@ -79,7 +79,8 @@ namespace engine
 
 		void SpawnUnitCreep(UnitCreep creep)
 		{
-
+            Vector3 position = creep.Path.waypoints[0];
+            GameObject obj = ObjectPool.GetCreep(creep.sprite, position);
 		}
 
         // Use this for initialization

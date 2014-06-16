@@ -7,14 +7,15 @@
     <SchemaVersion>2.0</SchemaVersion>
     <ProjectGuid>{14F6CDF6-9293-E1A8-A2EC-2D9997BD4D35}</ProjectGuid>
     <OutputType>Library</OutputType>
-    <RootNamespace></RootNamespace>
+    <RootNamespace>
+    </RootNamespace>
     <AssemblyName>UnityVS.Test.CSharp</AssemblyName>
     <FileAlignment>512</FileAlignment>
     <NoConfig>true</NoConfig>
     <NoStdLib>true</NoStdLib>
     <ProjectTypeGuids>{E097FAD1-6243-4DAD-9C02-E9B9EFC3FFC1};{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}</ProjectTypeGuids>
     <MonoProfile>unity</MonoProfile>
-    <UnityPath>C:\Program Files\Unity\Editor</UnityPath>
+    <UnityPath>C:\Program Files (x86)\Unity\Editor</UnityPath>
     <MonoPath>$(UnityPath)\Data\Mono</MonoPath>
     <LibraryAssembly>Assembly-CSharp.dll</LibraryAssembly>
     <TargetFrameworkDirectory>$(MonoPath)\lib\mono\$(MonoProfile)</TargetFrameworkDirectory>
@@ -197,6 +198,7 @@
     <Compile Include="Assets\Scripts\engine\lib\AudioPlayerManager.cs" />
     <Compile Include="Assets\Scripts\engine\lib\GameObjectUtil.cs" />
     <Compile Include="Assets\Scripts\engine\lib\PlaySound.cs" />
+    <Compile Include="Assets\Scripts\engine\ObjectPool.cs" />
     <Compile Include="Assets\Scripts\engine\PathTD.cs" />
     <Compile Include="Assets\Scripts\engine\Platforms.cs" />
     <Compile Include="Assets\Scripts\engine\ResourceManager.cs" />
@@ -208,7 +210,6 @@
     <Compile Include="Assets\Scripts\engine\Wave.cs" />
     <Compile Include="Assets\Scripts\game\Level.cs" />
     <Compile Include="Assets\Scripts\game\Level1.cs" />
-    <Compile Include="Assets\Scripts\game\PathFind.cs" />
     <Compile Include="Assets\Scripts\game\SoundControl.cs" />
     <Compile Include="Assets\Scripts\game\StartSence.cs" />
     <Compile Include="Assets\Scripts\Test.cs" />
