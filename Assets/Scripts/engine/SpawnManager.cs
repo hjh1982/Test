@@ -52,7 +52,7 @@ namespace engine
 
             if ((currentWave < waves.Length) && (GameControl.gameState != GameState.Ended))
             {
-                if ((RealTime.time - lastSpawnTime) >= wave.Interval)
+                if ((RealTime.time - lastSpawnTime) >= wave.interval)
                 {
 					lastSpawnTime = RealTime.time;
 					StartCoroutine(SpawnCreep(wave));
@@ -63,9 +63,9 @@ namespace engine
 		IEnumerator SpawnCreep(Wave wave)
 		{
 			float lastCreepTime = RealTime.time;
-			foreach (UnitCreep creep in wave.Creeps) 
+			foreach (UnitCreep creep in wave.creeps) 
 			{
-				if((RealTime.time - lastCreepTime) < creep.Interval)
+				if((RealTime.time - lastCreepTime) < creep.interval)
 				{
 					yield return 0;
 				}
@@ -79,8 +79,8 @@ namespace engine
 
 		void SpawnUnitCreep(UnitCreep creep)
 		{
-            Vector3 position = creep.Path.waypoints[0];
-            GameObject obj = ObjectPool.GetCreep(creep.sprite, position);
+            Vector3 position = creep.path.waypoints[0];
+			GameObject go = ObjectPool.GetEnemy(transform.parent.gameObject, creep.prefab, position);
 		}
 
         // Use this for initialization
@@ -88,6 +88,11 @@ namespace engine
         {
             spawnManager = this;
         }
+
+		void Start()
+		{
+			Spawn ();
+		}
 
         // Update is called once per frame
         void Update()

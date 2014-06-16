@@ -8,17 +8,18 @@ namespace engine
 	/// <summary>
 	/// 完整的一大波怪
 	/// </summary>
+	[System.Serializable]
     public class Wave
     {
-        public int ID;
+        public int id;
 		/// <summary>
 		/// 包含的一组组小怪
 		/// </summary>
-        public UnitCreep[] Creeps = new UnitCreep[1];
+		public UnitCreep[] creeps;
 		/// <summary>
 		/// 单位是秒,与上一波的时间间隔
 		/// </summary>
-        public float Interval;
+        public float interval;
 
 		//
     }

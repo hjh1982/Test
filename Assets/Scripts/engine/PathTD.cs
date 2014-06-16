@@ -4,6 +4,7 @@ using System.Collections.Generic;
 
 namespace engine
 {
+	[System.Serializable]
     public class PathTD : MonoBehaviour
     {
         //速度单位是像素

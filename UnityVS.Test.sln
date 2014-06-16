@@ -5,8 +5,6 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "UnityVS.Test.CSharp", "Unit
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "UnityVS.Test.CSharp.Editor", "UnityVS.Test.CSharp.Editor.csproj", "{93C7234F-92C3-CB1E-7D8D-33D3AC97F899}"
 EndProject
-Project("{1FAC5C55-277D-4884-94A4-83DBDAF57E56}") = "UnityVS.Test.UnityScript", "UnityVS.Test.UnityScript.unityproj", "{D2181F66-A1B6-8F0D-8DB4-FE6FA6EE4283}"
-EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -21,10 +19,6 @@ Global
 		{93C7234F-92C3-CB1E-7D8D-33D3AC97F899}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{93C7234F-92C3-CB1E-7D8D-33D3AC97F899}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{93C7234F-92C3-CB1E-7D8D-33D3AC97F899}.Release|Any CPU.Build.0 = Release|Any CPU
-		{D2181F66-A1B6-8F0D-8DB4-FE6FA6EE4283}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{D2181F66-A1B6-8F0D-8DB4-FE6FA6EE4283}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{D2181F66-A1B6-8F0D-8DB4-FE6FA6EE4283}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{D2181F66-A1B6-8F0D-8DB4-FE6FA6EE4283}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

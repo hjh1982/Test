@@ -3,11 +3,12 @@ using System.Collections;
 
 namespace engine
 {
+	[System.Serializable]
     public class UnitCreep:Unit
     {
-		public float Interval = -1;
+		public float interval = -1;
 
-        public PathTD Path;
+        public PathTD path;
 
     }
 }
