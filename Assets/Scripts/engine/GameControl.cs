@@ -12,6 +12,7 @@ namespace engine
         {
             if (bShowDebug)
             {
+				Debug.Log(message);
             }
         }
 

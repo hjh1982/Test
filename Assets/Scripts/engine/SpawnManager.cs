@@ -12,9 +12,6 @@ namespace engine
         public Wave[] waves;
 
         int currentWave = 0;
-        
-		//最近一次产卵开始时间
-        float lastSpawnTime = 0;
 	
 		/// <summary>
 		/// 返回是否可以产卵
@@ -23,7 +20,7 @@ namespace engine
         {
             if (GameControl.gameState != GameState.Ended)
             {
-                if (currentWave >= waves.Length - 1)
+                if ((currentWave != 0) && (currentWave >= waves.Length - 1))
                 {
                     GameControl.ShowDebugMessage("All waves has been spawned");
                     return false;
@@ -36,7 +33,7 @@ namespace engine
                         GameControl.ShowDebugMessage("Game Started");
                     }
 
-                    SpawnWave();
+                    StartCoroutine(CoroutineSpawnWave());
                     return true;
                 }
             }
@@ -44,43 +41,41 @@ namespace engine
             return false;
         }
 
-        void SpawnWave()
+        IEnumerator CoroutineSpawnWave()
         {
-			if (lastSpawnTime == 0) lastSpawnTime = RealTime.time;
+			Wave wave;
 
-            Wave wave = waves[currentWave];
-
-            if ((currentWave < waves.Length) && (GameControl.gameState != GameState.Ended))
+            while ((currentWave < waves.Length) && (GameControl.gameState != GameState.Ended))
             {
-                if ((RealTime.time - lastSpawnTime) >= wave.interval)
-                {
-					lastSpawnTime = RealTime.time;
-					StartCoroutine(SpawnCreep(wave));
-                }
+				wave = waves[currentWave];
+
+				yield return StartCoroutine(TimeUtil.Wait(wave.interval));
+				StartCoroutine(CoroutineSpawnCreep(wave));
+				currentWave++;
             }
         }
 
-		IEnumerator SpawnCreep(Wave wave)
+		IEnumerator CoroutineSpawnCreep(Wave wave)
 		{
-			float lastCreepTime = RealTime.time;
+			GameControl.ShowDebugMessage("wave:" + wave.id);
 			foreach (UnitCreep creep in wave.creeps) 
 			{
-				if((RealTime.time - lastCreepTime) < creep.interval)
-				{
-					yield return 0;
-				}
-				else
-				{
-					lastCreepTime = RealTime.time;
-					SpawnUnitCreep(creep);
-				}
+				yield return StartCoroutine(TimeUtil.Wait(creep.interval));
+				GameControl.ShowDebugMessage(wave.id + ":" + creep.id);
+				SpawnUnitCreep(wave.id, creep);
 			}
         }
 
-		void SpawnUnitCreep(UnitCreep creep)
+		void SpawnUnitCreep(int waveId, UnitCreep creep)
 		{
             Vector3 position = creep.path.waypoints[0];
 			GameObject go = ObjectPool.GetEnemy(transform.parent.gameObject, creep.prefab, position);
+			go.name = creep.prefab.name + "_" + waveId + "_" + creep.id;
+
+			PathFinder finder = go.GetComponent<PathFinder> ();
+			if (finder != null) {
+				finder.path = creep.path;
+			}
 		}
 
         // Use this for initialization

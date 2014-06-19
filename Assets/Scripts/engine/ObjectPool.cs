@@ -3,7 +3,7 @@ using System.Collections;
 
 namespace engine
 {
-    //TODO:
+	//TODO:没有实现，现在只是简单的new
     public class ObjectPool
     {
         static public GameObject GetEnemy(GameObject parent, GameObject prefab, Vector3 position)

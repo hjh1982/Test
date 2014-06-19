@@ -1,4 +1,4 @@
-﻿using UnityEngine;
+using UnityEngine;
 using System.Collections;
 
 namespace engine
@@ -8,7 +8,7 @@ namespace engine
     {
 		public float interval = -1;
 
-        public PathTD path;
+        public Path path;
 
     }
 }
